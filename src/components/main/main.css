@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+
+main {
+  background-color: #f6f7f9;
+  margin-top: 100px;
+  margin-left: 270px;
+  width: calc(100vw - 270px);
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 32px;
+  justify-content: center;
+  padding: 32px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.catalogue-header {
+  display: flex;
+  font-family: "Plus Jakarta Sans";
+  align-items: center;
+  margin-top: 28px;
+  margin-left: 32px;
+}
+
+.catalogue-title {
+  font-size: 20px;
+  color: #1A202C;
+  margin-right: 15px;
+  font-weight: 700;
+}
+
+.catalogue-count {
+  font-size: 14px;
+  color: #90A3BF;
+  font-weight: 500;
+}
