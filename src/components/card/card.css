@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+
+.favorite-card.unliked {
+  position: absolute;
+  right: 30px;
+  color: white;
+  stroke: gray;
+  stroke-width: 2px;
+}
+
+.favorite-card.liked {
+  position: absolute;
+  right: 30px;
+  color: red;
+  border-color: transparent;
+}
+
+.favorite-card:hover {
+  transform: scale(1.1);
+}
+
+.car-card {
+  position: relative;
+  font-family: "Plus Jakarta Sans";
+  background-color: white;
+  border-radius: 10px;
+  padding: 24px;
+  width: 317px;
+  height: 388px;
+  box-sizing: border-box;
+}
+
+.car-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.car-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0px;
+}
+
+.car-type {
+  font-size: 14px;
+  color: var(--Secondary-300, #90a3bf);
+  margin-bottom: 52px;
+}
+
+.car-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 52px;
+}
+
+.car-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #90a3bf;
+  margin-bottom: 36px;
+}
+
+.car-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #90a3bf;
+}
+
+.car-icon {
+  font-size: 20px;
+  color: #90a3bf;
+}
+
+.car-price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.car-price {
+  display: flex;
+  align-items: baseline;
+}
+
+.car-price-value {
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.car-price-unit {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--Secondary-300, #90a3bf);
+}
+
+.rent-button {
+  background-color: #3563e9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.rent-button:hover {
+  background-color: #254ab7;
+}

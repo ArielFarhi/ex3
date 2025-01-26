@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Koenigsegg",
+    "type": "Sport",
+    "pricePerDay": 99.00,
+    "fuel": "90L",
+    "transmission": "Manual",
+    "capacity": "2 People",
+    "image": "/images/koenigsegg.png"
+  },
+  {
+    "id": 2,
+    "name": "Koenigsegg",
+    "type": "Sport",
+    "pricePerDay": 99.00,
+    "fuel": "90L",
+    "transmission": "Manual",
+    "capacity": "2 People",
+    "image": "/images/koenigsegg.png"
+  },
+  {
+    "id": 3,
+    "name": "Koenigsegg",
+    "type": "Sport",
+    "pricePerDay": 99.00,
+    "fuel": "90L",
+    "transmission": "Manual",
+    "capacity": "2 People",
+    "image": "/images/koenigsegg.png"
+  },
+  {
+    "id": 4,
+    "name": "Koenigsegg",
+    "type": "Sport",
+    "pricePerDay": 99.00,
+    "fuel": "90L",
+    "transmission": "Manual",
+    "capacity": "2 People",
+    "image": "/images/koenigsegg.png"
+  },
+  {
+    "id": 5,
+    "name": "Koenigsegg",
+    "type": "Sport",
+    "pricePerDay": 99.00,
+    "fuel": "90L",
+    "transmission": "Manual",
+    "capacity": "2 People",
+    "image": "/images/koenigsegg.png"
+  },
+  {
+    "id": 6,
+    "name": "Koenigsegg",
+    "type": "Sport",
+    "pricePerDay": 99.00,
+    "fuel": "90L",
+    "transmission": "Manual",
+    "capacity": "2 People",
+    "image": "/images/koenigsegg.png"
+  }
+]
