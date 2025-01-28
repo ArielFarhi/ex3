@@ -15,29 +15,29 @@ function Navbar({ carsData, onTypeChange, onCapacityChange, onPriceChange }) {
 
   const maxPrice = Math.max(...carsData.map((car) => car.pricePerDay));
 
-  const [selectedTypes, setSelectedTypes] = useState(Object.keys(uniqueTypes)); // כל סוגי הרכבים מסומנים בהתחלה
-  const [selectedCapacities, setSelectedCapacities] = useState(Object.keys(uniqueCapacities)); // כל הקיבולות מסומנות בהתחלה
-  const [priceRange, setPriceRange] = useState(maxPrice); // מחיר מקסימלי כברירת מחדל
+  const [selectedTypes, setSelectedTypes] = useState(Object.keys(uniqueTypes)); 
+  const [selectedCapacities, setSelectedCapacities] = useState(Object.keys(uniqueCapacities)); 
+  const [priceRange, setPriceRange] = useState(maxPrice); 
 
   const handleTypeChange = (type) => {
     const updatedTypes = selectedTypes.includes(type)
-      ? selectedTypes.filter((t) => t !== type) // הסרה אם קיים
-      : [...selectedTypes, type]; // הוספה אם לא קיים
+      ? selectedTypes.filter((t) => t !== type) 
+      : [...selectedTypes, type]; 
     setSelectedTypes(updatedTypes);
-    onTypeChange(updatedTypes); // העברת הנתונים למעלה
+    onTypeChange(updatedTypes); 
   };
 
   const handleCapacityChange = (capacity) => {
     const updatedCapacities = selectedCapacities.includes(capacity)
-      ? selectedCapacities.filter((c) => c !== capacity) // הסרה אם קיים
-      : [...selectedCapacities, capacity]; // הוספה אם לא קיים
+      ? selectedCapacities.filter((c) => c !== capacity) 
+      : [...selectedCapacities, capacity]; 
     setSelectedCapacities(updatedCapacities);
-    onCapacityChange(updatedCapacities); // העברת הנתונים למעלה
+    onCapacityChange(updatedCapacities); 
   };
 
   const handlePriceChange = (e, newValue) => {
     setPriceRange(newValue);
-    onPriceChange(newValue); // העברת הנתונים למעלה
+    onPriceChange(newValue); 
   };
 
   return (
@@ -48,8 +48,8 @@ function Navbar({ carsData, onTypeChange, onCapacityChange, onPriceChange }) {
           <FormControlLabel
             key={type}
             control={
-              <Checkbox
-                checked={selectedTypes.includes(type)} // מסומן כברירת מחדל
+              <Checkbox 
+                checked={selectedTypes.includes(type)} 
                 onChange={() => handleTypeChange(type)}
               />
             }
@@ -64,24 +64,36 @@ function Navbar({ carsData, onTypeChange, onCapacityChange, onPriceChange }) {
           <FormControlLabel
             key={capacity}
             control={
-              <Checkbox
+              <Checkbox 
                 checked={selectedCapacities.includes(capacity)} 
                 onChange={() => handleCapacityChange(capacity)}
               />
             }
-            label={`${capacity} Person (${count})`} 
+            label={`${capacity} (${count})`} 
           />
         ))}
       </div>
 
-      <div className="filter-section">
+      <div className="filter-section price-filter">
         <h6>PRICE (PER DAY)</h6>
-        <Slider
+        <Slider 
           value={priceRange}
           onChange={handlePriceChange}
           min={0}
           max={maxPrice}
-          valueLabelDisplay="auto"
+          valueLabelDisplay="off"
+          sx={{
+            width: "88%",
+            "& .MuiSlider-thumb": {
+              backgroundColor: "#3563e9", 
+            },
+            "& .MuiSlider-track": {
+              backgroundColor: "#3563e9", 
+            },
+            "& .MuiSlider-rail": {
+              backgroundColor: "#d3d3d3", 
+            },
+          }}
         />
         <span>Max: ${priceRange}</span>
       </div>

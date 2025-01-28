@@ -3,12 +3,10 @@
 .navbar {
   font-family: "Plus Jakarta Sans", sans-serif;
   position: fixed; 
-  top: 100px; 
-  padding: 20px;
-  width: 300px;
-  display: flex;
+  top: 110px; 
+  padding-left: 32px;
+  width: 328px;
   flex-direction: column;
-  gap: 10px;
   background-color: white;
   height: calc(100vh - 150px);
   overflow-y: scroll;
@@ -18,10 +16,15 @@
   display: none; 
 }
 
-.navbar h6 {
+.filter-section h6 {
+  margin-bottom: 28px;
   color: #90A3BF;
   font-size: 12px;
   font-weight: 600;
+}
+
+.price-filter h6 {
+  margin-bottom: 15px;
 }
 
 .navbar .filter-section label {
@@ -30,19 +33,18 @@
   font-size: 20px;
   font-weight: 600;
   color: #596780;
-  margin-bottom: 8px;
+  margin-bottom: 28px;
   cursor: pointer;
 }
 
 .navbar .filter-section input[type="checkbox"] {
-  margin-right: 10px;
+  margin-right: 8px;
   accent-color: #3563e9;
 }
 
 .navbar .slider-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 .navbar .slider-container span {
@@ -55,8 +57,21 @@
   width: 100%;
   cursor: pointer;
   accent-color: #3563e9;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
+
+.filter-section span {
+  font-size: 20px;
+  /* font-weight: 600; */
+  color:  #596780;
+}
+
+
+
+
+
+
+
 
 
 
