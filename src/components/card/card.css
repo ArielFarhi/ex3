@@ -1,21 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
 
-.favorite-card.unliked {
+.favorite-car.unliked {
   position: absolute;
   right: 30px;
-  color: white;
-  stroke: gray;
-  stroke-width: 2px;
 }
 
-.favorite-card.liked {
+.favorite-car.liked {
   position: absolute;
   right: 30px;
   color: red;
+  fill: red;
   border-color: transparent;
 }
 
-.favorite-card:hover {
+.favorite-car:hover {
   transform: scale(1.1);
 }
 
@@ -53,6 +51,8 @@
   height: auto;
   border-radius: 10px;
   margin-bottom: 52px;
+  width: 272px;
+  height: 84px;
 }
 
 .car-details {
