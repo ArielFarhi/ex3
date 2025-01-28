@@ -1,16 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import SearchBar from "../searchBar/SearchBar";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import { IconButton } from "@mui/material";
 import "./header.css";
-import Favorite from "../Favorite";
 
-function Header() {
+function Header({ onSearch, onToggleFavorites }) {
+  const [showFavorites, setShowFavorites] = useState(false);
+
+  const handleFavoriteClick = () => {
+    const newState = !showFavorites;
+    setShowFavorites(newState);
+    onToggleFavorites(newState);
+  };
+
   return (
     <header>
       <a href="/HomePage">
         <div className="logo"></div>
       </a>
-      <SearchBar />
-      <Favorite className="favorite-header"/>
+      <SearchBar onSearch={onSearch} /> 
+      <IconButton
+        onClick={handleFavoriteClick}
+        className={showFavorites ? "favorite-header liked" : "favorite-header unliked"}
+      >
+        <FavoriteIcon />
+      </IconButton>
     </header>
   );
 }

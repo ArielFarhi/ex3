@@ -26,10 +26,6 @@ header {
   right: 30px;
 }
 
-.favorite-header.unliked {
-  color: #596780;
-}
-
 .favorite-header.liked {
   color: red;
 
