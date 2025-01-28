@@ -7,56 +7,116 @@
     "fuel": "90L",
     "transmission": "Manual",
     "capacity": "2 People",
-    "image": "/images/koenigsegg.png"
+    "image": "Koenigsegg.png"
   },
   {
     "id": 2,
-    "name": "Koenigsegg",
+    "name": "Nissan GT - R",
     "type": "Sport",
-    "pricePerDay": 99.00,
-    "fuel": "90L",
+    "pricePerDay": 82.00,
+    "fuel": "80L",
     "transmission": "Manual",
     "capacity": "2 People",
-    "image": "/images/koenigsegg.png"
+    "image": "Nissan-GT-R.png"
   },
   {
     "id": 3,
-    "name": "Koenigsegg",
+    "name": "Rolls-Royce",
     "type": "Sport",
-    "pricePerDay": 99.00,
-    "fuel": "90L",
+    "pricePerDay": 96.00,
+    "fuel": "70L",
     "transmission": "Manual",
-    "capacity": "2 People",
-    "image": "/images/koenigsegg.png"
+    "capacity": "4 People",
+    "image": "Rolls-Royce.png"
   },
   {
     "id": 4,
-    "name": "Koenigsegg",
-    "type": "Sport",
-    "pricePerDay": 99.00,
-    "fuel": "90L",
+    "name": "All New Rush",
+    "type": "SUV",
+    "pricePerDay": 76.00,
+    "fuel": "70L",
     "transmission": "Manual",
-    "capacity": "2 People",
-    "image": "/images/koenigsegg.png"
+    "capacity": "6 People",
+    "image": "All-New-Rush.png"
   },
   {
     "id": 5,
-    "name": "Koenigsegg",
-    "type": "Sport",
-    "pricePerDay": 99.00,
-    "fuel": "90L",
+    "name": "CR - V",
+    "type": "SUV",
+    "pricePerDay": 80.00,
+    "fuel": "80L",
     "transmission": "Manual",
-    "capacity": "2 People",
-    "image": "/images/koenigsegg.png"
+    "capacity": "6 People",
+    "image": "CR-V.png"
   },
   {
     "id": 6,
-    "name": "Koenigsegg",
-    "type": "Sport",
-    "pricePerDay": 99.00,
+    "name": "All New Terios",
+    "type": "SUV",
+    "pricePerDay": 74.00,
     "fuel": "90L",
     "transmission": "Manual",
-    "capacity": "2 People",
-    "image": "/images/koenigsegg.png"
+    "capacity": "6 People",
+    "image": "All-New-Terios.png"
+  },
+  {
+    "id": 7,
+    "name": "MG ZX Exclusice",
+    "type": "Hatchback",
+    "pricePerDay": 76.00,
+    "fuel": "70L",
+    "transmission": "Electric",
+    "capacity": "4 People",
+    "image": "MG-ZX-Exclusice.png"
+  },
+  {
+    "id": 8,
+    "name": "New MG ZS",
+    "type": "SUV",
+    "pricePerDay": 80.00,
+    "fuel": "80L",
+    "transmission": "Manual",
+    "capacity": "6 People",
+    "image": "New-MG-ZS.png"
+  },
+  {
+    "id": 9,
+    "name": "MG ZX Excite",
+    "type": "Hatchback",
+    "pricePerDay": 74.00,
+    "fuel": "90L",
+    "transmission": "Electric",
+    "capacity": "4 People",
+    "image": "MG-ZX-Excite.png"
+  },
+  {
+    "id": 10,
+    "name": "Mercedes Benz",
+    "type": "Sedan",
+    "pricePerDay": 76.00,
+    "fuel": "70L",
+    "transmission": "Electric",
+    "capacity": "4 People",
+    "image": "MG-ZX-Exclusice.png"
+  },
+  {
+    "id": 11,
+    "name": "Mini Cooper",
+    "type": "Coupe",
+    "pricePerDay": 80.00,
+    "fuel": "80L",
+    "transmission": "Manual",
+    "capacity": "6 People",
+    "image": "New-MG-ZS.png"
+  },
+  {
+    "id": 12,
+    "name": "Pegout 208",
+    "type": "MPV",
+    "pricePerDay": 74.00,
+    "fuel": "90L",
+    "transmission": "Electric",
+    "capacity": "4 People",
+    "image": "MG-ZX-Excite.png"
   }
 ]
