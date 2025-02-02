@@ -1,17 +1,23 @@
 .app-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100vh; 
+  background-color: #F6F7F9;;
 }
 
 .content-container {
-  display: flex;
-  flex: 1;
+  flex: 1; 
 }
 
-footer {
-  border-top: 1px solid rgba(195, 212, 233, 0.4);
-  padding: 20px;
+/* .footer {
+  position: fixed; 
+  bottom: 0; 
+  left: 0;
+  z-index: 1000; 
+  width: 90%;
+  background-color: white;
+  padding: 80px 60px;
   text-align: center;
-  background-color: #fff;
-}
+} */
+
+

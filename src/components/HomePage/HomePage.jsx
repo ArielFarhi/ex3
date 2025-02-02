@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Header from "../Header/Header";
 import Navbar from "../Navbar/Navbar";
 import Main from "../Main/Main";
-import carsData from "../../data/carsData"; 
+import CarsData from "../../data/carsData"; 
+import Footer from "../Footer/Footer";
 import "./homePage.css";
 
 function HomePage() {
@@ -11,7 +12,7 @@ function HomePage() {
   const [filters, setFilters] = useState({
     types: [],
     capacities: [],
-    maxPrice: Math.max(...carsData.map((car) => car.pricePerDay)),
+    maxPrice: Math.max(...CarsData.map((car) => car.pricePerDay)),
   });
 
   const handleTypeChange = (selectedTypes) => {
@@ -43,7 +44,7 @@ function HomePage() {
       />
       <div className="content-container">
         <Navbar
-          carsData={carsData}
+          carsData={CarsData}
           onTypeChange={handleTypeChange}
           onCapacityChange={handleCapacityChange}
           onPriceChange={handlePriceChange}
@@ -53,6 +54,7 @@ function HomePage() {
           searchQuery={searchQuery}
           filters={filters}
         />
+        <Footer />
       </div>
     </div>
   );

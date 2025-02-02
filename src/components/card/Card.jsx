@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { IconButton } from "@mui/material";
@@ -9,18 +10,27 @@ import "./card.css";
 
 function Card({ car, toggleFavorite }) {
   const [isLiked, setIsLiked] = useState(false);
-  const handleFavoriteClick = () => {
+  const [imageSrc, setImageSrc] = useState(null);
+  const navigate = useNavigate();
+
+  const handleFavoriteClick = (e) => {
+    e.stopPropagation(); 
     setIsLiked(!isLiked);
     toggleFavorite();
   };
-  const [imageSrc, setImageSrc] = useState(null);
+
+  const handleCardClick = () => {
+    navigate(`/cars/${car.id}`);
+  };
+
   useEffect(() => {
     import(`../../Assets/${car.image}`)
       .then((image) => setImageSrc(image.default))
       .catch((err) => console.error(err));
   }, [car.image]);
+
   return (
-    <div className="car-card">
+    <div className="car-card" onClick={handleCardClick}>
       <IconButton
         onClick={handleFavoriteClick}
         className={`favorite-car ${isLiked ? "liked" : "unliked"}`}
@@ -52,7 +62,14 @@ function Card({ car, toggleFavorite }) {
           </span>
           <span className="car-price-unit">day</span>
         </div>
-        <button className="rent-button">Rent Now</button>
+        <button
+          className="rent-button"
+          onClick={(e) => {
+            e.stopPropagation(); 
+          }}
+        >
+          Rent Now
+        </button>
       </div>
     </div>
   );
