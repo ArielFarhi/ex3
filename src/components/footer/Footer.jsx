@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../Logo/Logo"
 import "./footer.css";
 
 function Footer() {
@@ -6,7 +7,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-top">
         <div className="footer-logo">
-          <h2>ShenCarCar</h2>
+          <Logo />
           <p>
             Our vision is to provide convenience and help increase your sales
             business.

@@ -7,6 +7,9 @@
     "fuel": "90L",
     "transmission": "Manual",
     "capacity": "2 People",
+    "rating": 4.8,
+    "reviewCount": 350,
+    "description": "The ultimate sports car for thrill seekers, combining speed and luxury.",
     "image": "Koenigsegg.png"
   },
   {
@@ -17,6 +20,9 @@
     "fuel": "80L",
     "transmission": "Manual",
     "capacity": "2 People",
+    "rating": 4.7,
+    "reviewCount": 440,
+    "description": "NISMO embodies outstanding performance inspired by the race track.",
     "image": "Nissan-GT-R.png"
   },
   {
@@ -27,6 +33,9 @@
     "fuel": "70L",
     "transmission": "Manual",
     "capacity": "4 People",
+    "rating": 4.9,
+    "reviewCount": 220,
+    "description": "Experience the pinnacle of luxury and performance in a single car.",
     "image": "Rolls-Royce.png"
   },
   {
@@ -37,6 +46,9 @@
     "fuel": "70L",
     "transmission": "Manual",
     "capacity": "6 People",
+    "rating": 4.5,
+    "reviewCount": 310,
+    "description": "A reliable and spacious SUV designed for family adventures.",
     "image": "All-New-Rush.png"
   },
   {
@@ -47,6 +59,9 @@
     "fuel": "80L",
     "transmission": "Manual",
     "capacity": "6 People",
+    "rating": 4.6,
+    "reviewCount": 290,
+    "description": "The perfect blend of style and utility for every journey.",
     "image": "CR-V.png"
   },
   {
@@ -57,6 +72,9 @@
     "fuel": "90L",
     "transmission": "Manual",
     "capacity": "6 People",
+    "rating": 4.4,
+    "reviewCount": 200,
+    "description": "An SUV with great fuel efficiency and room for everyone.",
     "image": "All-New-Terios.png"
   },
   {
@@ -67,6 +85,9 @@
     "fuel": "70L",
     "transmission": "Electric",
     "capacity": "4 People",
+    "rating": 4.3,
+    "reviewCount": 150,
+    "description": "A compact electric car perfect for city driving.",
     "image": "MG-ZX-Exclusice.png"
   },
   {
@@ -77,6 +98,9 @@
     "fuel": "80L",
     "transmission": "Manual",
     "capacity": "6 People",
+    "rating": 4.5,
+    "reviewCount": 220,
+    "description": "A modern SUV with advanced features for every adventure.",
     "image": "New-MG-ZS.png"
   },
   {
@@ -87,6 +111,9 @@
     "fuel": "90L",
     "transmission": "Electric",
     "capacity": "4 People",
+    "rating": 4.2,
+    "reviewCount": 180,
+    "description": "An efficient and eco-friendly hatchback for urban lifestyles.",
     "image": "MG-ZX-Excite.png"
   },
   {
@@ -97,7 +124,10 @@
     "fuel": "70L",
     "transmission": "Electric",
     "capacity": "4 People",
-    "image": "MG-ZX-Exclusice.png"
+    "rating": 4.8,
+    "reviewCount": 300,
+    "description": "A luxurious sedan that redefines elegance and comfort.",
+    "image": "Rolls-Royce.png"
   },
   {
     "id": 11,
@@ -106,8 +136,11 @@
     "pricePerDay": 80.00,
     "fuel": "80L",
     "transmission": "Manual",
-    "capacity": "6 People",
-    "image": "New-MG-ZS.png"
+    "capacity": "4 People",
+    "rating": 4.7,
+    "reviewCount": 250,
+    "description": "A stylish coupe with exceptional performance for city drives.",
+    "image": "Nissan-GT-R.png"
   },
   {
     "id": 12,
@@ -117,6 +150,9 @@
     "fuel": "90L",
     "transmission": "Electric",
     "capacity": "4 People",
-    "image": "MG-ZX-Excite.png"
+    "rating": 4.3,
+    "reviewCount": 200,
+    "description": "An eco-friendly MPV with great comfort for long journeys.",
+    "image": "Koenigsegg.png"
   }
 ]

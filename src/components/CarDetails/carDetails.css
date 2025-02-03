@@ -1,0 +1,38 @@
+.car-details-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .car-details-card {
+    /* max-width: 600px; */
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .car-details-card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .car-details-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .car-price h2 {
+    color: #3563e9;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    color: #3563e9;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
