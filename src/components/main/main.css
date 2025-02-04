@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
 
 main {
-  margin-top: 100px;
+  margin-top: 120px;
   margin-left: 360px;
+  background-color: #F6F7F9;
+  min-height: calc(105vh - 120px);
 }
 
 .cards-container {
+  background-color: #F6F7F9;;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 32px;
