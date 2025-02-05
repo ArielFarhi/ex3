@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Card from "../Card/Card";
 import carsData from "../../data/carsData";
-import "./main.css";
+import "./carList.css";
 
 function Main({ showFavorites, searchQuery, filters }) {
   const [favorites, setFavorites] = useState([]);
