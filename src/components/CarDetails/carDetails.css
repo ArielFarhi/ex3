@@ -1,38 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+
 .car-details-container {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .car-details-card {
-    /* max-width: 600px; */
-    margin: 0 auto;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .car-details-card img {
-    max-width: 100%;
-    border-radius: 8px;
-  }
-  
-  .car-details-info {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-  }
-  
-  .car-price h2 {
-    color: #3563e9;
-  }
-  
-  .back-button {
-    background: none;
-    border: none;
-    color: #3563e9;
-    cursor: pointer;
-    margin-bottom: 20px;
-    font-size: 16px;
-  }
-  
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin-top: 120px;
+  margin-left: 360px;
+  background-color: #f6f7f9;
+  min-height: calc(105vh - 120px);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Plus Jakarta Sans";
+}
+
+.car-details-left {
+  flex: 1;
+  width: 492px;
+  height: 360px;
+}
+
+.car-highlight {
+  background-color: blue;
+  padding: 24px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 492px;
+  height: 360px;
+  box-sizing: border-box;
+}
+
+.car-title {
+  color: var(--Primary-0, #fff);
+  font-size: 32px;
+  font-weight: 600;
+  margin: auto;
+  line-height: 150%;
+  letter-spacing: -0.96px;
+}
+
+.car-subtitle {
+  font-size: 16px;
+  color: var(--Primary-0, #fff);
+  line-height: 150%;
+  letter-spacing: -0.32px;
+}
+
+.car-main-image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-gallery {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.gallery-image {
+  flex: 1;
+  max-height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.car-name-details {
+  color: var(--Secondary-500, #1a202c);
+  font-family: "Plus Jakarta Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-right: 200px;
+}
+
+.car-description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 34px;
+}
+
+.car-details-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 44px;
+  row-gap: 16px;
+  margin: 20px 0;
+  color: #7d7f81;
+  font-size: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+.car-details-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.car-details-list span {
+  color: var(--Secondary-300, #90a3bf);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.car-details-list strong {
+  margin-left: 16px;
+  color: var(--Secondary-400, #596780);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.car-details-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 492px;
+  height: 508px;
+  box-sizing: border-box;
+}
+
+.rent-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.car-price {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1d1f22;
+}
+
+.car-price span {
+  font-size: 16px;
+  font-weight: normal;
+  color: #7d7f81;
+}
+
+.rent-now-button {
+  border-radius: 4px;
+  background: var(--Primary-500, #3563e9);
+  color: var(--Primary-0, #fff);
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 140px;
+  height: 56px;
+  padding: 0px 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.rent-now-button:hover {
+  background-color: #274bc8;
+}
+
+.review-count {
+  color: var(--Secondary-400, #596780);
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  justify-content: center;
+}
+
+.rating-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0 32px;
+}

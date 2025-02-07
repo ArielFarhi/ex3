@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
+import { useAppContext } from "../AppContext";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { IconButton } from "@mui/material";
@@ -8,39 +9,35 @@ import AdjustIcon from "@mui/icons-material/Adjust";
 import PeopleIcon from "@mui/icons-material/People";
 import "./card.css";
 
-function Card({ car, toggleFavorite }) {
-  const [isLiked, setIsLiked] = useState(false);
-  const [imageSrc, setImageSrc] = useState(null);
+function Card({ car }) {
   const navigate = useNavigate();
+  const { favorites, toggleFavorite } = useAppContext();
+  const isLiked = favorites.includes(car.id);
 
   const handleFavoriteClick = (e) => {
     e.stopPropagation(); 
-    setIsLiked(!isLiked);
-    toggleFavorite();
+    toggleFavorite(car.id);
   };
 
-  const handleCardClick = () => {
+  const handleImageClick = () => {
     navigate(`/cars/${car.id}`);
   };
 
-  useEffect(() => {
-    import(`../../Assets/${car.image}`)
-      .then((image) => setImageSrc(image.default))
-      .catch((err) => console.error(err));
-  }, [car.image]);
-
   return (
-    <div className="car-card" onClick={handleCardClick}>
-      <IconButton
-        onClick={handleFavoriteClick}
-        className={`favorite-car ${isLiked ? "liked" : "unliked"}`}
-      >
-        {isLiked ? <FavoriteIcon /> : <FavoriteBorderIcon />}
+    <div className="car-card">
+      <IconButton onClick={handleFavoriteClick} className={`favorite-car ${isLiked ? "liked" : "unliked"}`}>
+        {isLiked ? <FavoriteIcon style={{ color: "red" }} /> : <FavoriteBorderIcon />}
       </IconButton>
 
       <h2 className="car-name">{car.name}</h2>
       <p className="car-type">{car.type}</p>
-      <img src={imageSrc} alt={car.name} className="car-image" />
+      <img 
+        src={require(`../../Assets/${car.image}`)} 
+        alt={car.name} 
+        className="car-image" 
+        onClick={handleImageClick} 
+        style={{ cursor: "pointer" }} // מוסיף חיווי חזותי שניתן ללחוץ על התמונה
+      />
       <div className="car-details">
         <div className="car-detail-item">
           <LocalGasStationIcon className="car-icon" />
@@ -62,12 +59,7 @@ function Card({ car, toggleFavorite }) {
           </span>
           <span className="car-price-unit">day</span>
         </div>
-        <button
-          className="rent-button"
-          onClick={(e) => {
-            e.stopPropagation(); 
-          }}
-        >
+        <button className="rent-button" onClick={(e) => e.stopPropagation()}>
           Rent Now
         </button>
       </div>
