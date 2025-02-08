@@ -71,7 +71,7 @@ function Navbar({ carsData }) {
           max={maxPrice}
           valueLabelDisplay="off"
           sx={{
-            width: "88%",
+            width: "100%",
             "& .MuiSlider-thumb": {
               backgroundColor: "#3563e9",
             },
