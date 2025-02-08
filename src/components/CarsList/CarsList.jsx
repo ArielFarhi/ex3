@@ -6,24 +6,20 @@ import "./carsList.css";
 
 function CarsList({ searchQuery, filters }) {
   const { favorites, showFavorites } = useAppContext();
-
   function searchCars(cars, query) {
     if (!query) return cars;
     return cars.filter((car) =>
       car.name.toLowerCase().includes(query.toLowerCase())
     );
   }
-  
   function filterCars(cars, filters) {
     return cars.filter((car) => {
       const matchType = filters.types.includes(car.type);
       const matchCapacity = filters.capacities.includes(car.capacity);
       const matchPrice = filters.maxPrice ? car.pricePerDay <= filters.maxPrice : true;
-  
       return matchType && matchCapacity && matchPrice;
     });
   }
-
   if (showFavorites) {
     return (
       <main>
@@ -41,10 +37,8 @@ function CarsList({ searchQuery, filters }) {
       </main>
     );
   }
-
   const searchedCars = searchCars(carsData, searchQuery);
   const finalCars = searchQuery ? searchedCars : filterCars(searchedCars, filters);
-
   return (
     <main>
       <div className="catalogue-header">

@@ -9,28 +9,24 @@ import "./homePage.css";
 
 function HomePage() {
   const { searchQuery, setSearchQuery, filters, setFilters } = useAppContext();
-
   const handleTypeChange = (selectedTypes) => {
     setFilters((prevFilters) => ({
       ...prevFilters,
       types: selectedTypes,
     }));
   };
-
   const handleCapacityChange = (selectedCapacities) => {
     setFilters((prevFilters) => ({
       ...prevFilters,
       capacities: selectedCapacities,
     }));
   };
-
   const handlePriceChange = (maxPrice) => {
     setFilters((prevFilters) => ({
       ...prevFilters,
       maxPrice,
     }));
   };
-
   return (
     <div className="app-container">
       <Header onSearch={setSearchQuery} />

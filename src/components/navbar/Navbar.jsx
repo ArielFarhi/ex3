@@ -5,31 +5,24 @@ import "./navbar.css";
 
 function Navbar({ carsData }) {
   const { filters, setFilters } = useAppContext();
-
   const uniqueTypes = [...new Set(carsData.map(car => car.type))];
   const uniqueCapacities = [...new Set(carsData.map(car => car.capacity))];
   const maxPrice = Math.max(...carsData.map(car => car.pricePerDay));
-
   const handleTypeChange = (type) => {
     const updatedTypes = filters.types.includes(type)
       ? filters.types.filter((t) => t !== type)
       : [...filters.types, type];
-
     setFilters((prevFilters) => ({ ...prevFilters, types: updatedTypes }));
   };
-
   const handleCapacityChange = (capacity) => {
     const updatedCapacities = filters.capacities.includes(capacity)
       ? filters.capacities.filter((c) => c !== capacity)
       : [...filters.capacities, capacity];
-
     setFilters((prevFilters) => ({ ...prevFilters, capacities: updatedCapacities }));
   };
-
   const handlePriceChange = (e, newValue) => {
     setFilters((prevFilters) => ({ ...prevFilters, maxPrice: newValue }));
   };
-
   return (
     <div className="navbar">
       <div className="filter-section">

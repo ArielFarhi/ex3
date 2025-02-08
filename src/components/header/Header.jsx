@@ -11,13 +11,11 @@ function Header({ onSearch }) {
   const { showFavorites, setShowFavorites } = useAppContext();
   const location = useLocation();
   const isCarDetailsPage = location.pathname.startsWith("/cars/");
-
   const handleFavoriteClick = () => {
     if (!isCarDetailsPage) {
       setShowFavorites(!showFavorites);
     }
   };
-
   return (
     <header>
       <div className="logo-container">

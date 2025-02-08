@@ -13,17 +13,14 @@ function CarDetails() {
   const { favorites, toggleFavorite } = useAppContext();
   const car = carsData.find((car) => car.id === parseInt(carId));
   const [isFavorite, setIsFavorite] = useState(false);
-
   useEffect(() => {
     if (car) {
       setIsFavorite(favorites.includes(car.id));
     }
   }, [favorites, car]);
-
   if (!car) {
     return <p>Car not found!</p>;
   }
-
   return (
     <>
       <h1 className="car-details-title">Car Details</h1>
