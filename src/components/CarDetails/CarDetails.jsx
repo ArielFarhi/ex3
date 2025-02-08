@@ -22,7 +22,7 @@ function CarDetails() {
     return <p>Car not found!</p>;
   }
   return (
-    <>
+    <div>
       <h1 className="car-details-title">Car Details</h1>
       <div className="car-details-container">
         <div className="car-details-left">
@@ -101,7 +101,7 @@ function CarDetails() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

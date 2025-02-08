@@ -55,7 +55,7 @@
   },
   {
     "id": 4,
-    "name": "All New Rush",
+    "name": "All New",
     "type": "SUV",
     "pricePerDay": 76.0,
     "fuel": "70L",
@@ -91,7 +91,7 @@
   },
   {
     "id": 6,
-    "name": "All New Terios",
+    "name": "All New",
     "type": "SUV",
     "pricePerDay": 74.0,
     "fuel": "90L",
@@ -109,7 +109,7 @@
   },
   {
     "id": 7,
-    "name": "MG ZX Exclusice",
+    "name": "MG ZX",
     "type": "Hatchback",
     "pricePerDay": 76.0,
     "fuel": "70L",
@@ -145,7 +145,7 @@
   },
   {
     "id": 9,
-    "name": "MG ZX Excite",
+    "name": "MG ZX",
     "type": "Hatchback",
     "pricePerDay": 74.0,
     "fuel": "90L",
@@ -289,7 +289,7 @@
   },
   {
     "id": 17,
-    "name": "MG ZX Exclusice",
+    "name": "MG ZX",
     "type": "Hatchback",
     "pricePerDay": 76.0,
     "fuel": "70L",
@@ -325,7 +325,7 @@
   },
   {
     "id": 19,
-    "name": "MG ZX Excite",
+    "name": "MG ZX",
     "type": "Hatchback",
     "pricePerDay": 74.0,
     "fuel": "90L",
@@ -415,7 +415,7 @@
   },
   {
     "id": 24,
-    "name": "All New Rush",
+    "name": "All New",
     "type": "SUV",
     "pricePerDay": 76.0,
     "fuel": "70L",
@@ -469,7 +469,7 @@
   },
   {
     "id": 27,
-    "name": "MG ZX Exclusice",
+    "name": "MG ZX",
     "type": "Hatchback",
     "pricePerDay": 76.0,
     "fuel": "70L",
@@ -505,7 +505,7 @@
   },
   {
     "id": 29,
-    "name": "MG ZX Excite",
+    "name": "MG ZX",
     "type": "Hatchback",
     "pricePerDay": 74.0,
     "fuel": "90L",
@@ -595,7 +595,7 @@
   },
   {
     "id": 34,
-    "name": "All New Rush",
+    "name": "All New",
     "type": "SUV",
     "pricePerDay": 76.0,
     "fuel": "70L",
@@ -649,7 +649,7 @@
   },
   {
     "id": 37,
-    "name": "MG ZX Exclusice",
+    "name": "MG ZX",
     "type": "Hatchback",
     "pricePerDay": 76.0,
     "fuel": "70L",
@@ -685,7 +685,7 @@
   },
   {
     "id": 39,
-    "name": "MG ZX Excite",
+    "name": "MG ZX",
     "type": "Hatchback",
     "pricePerDay": 74.0,
     "fuel": "90L",
@@ -775,7 +775,7 @@
   },
   {
     "id": 44,
-    "name": "All New Rush",
+    "name": "All New",
     "type": "SUV",
     "pricePerDay": 76.0,
     "fuel": "70L",
@@ -829,7 +829,7 @@
   },
   {
     "id": 47,
-    "name": "MG ZX Exclusice",
+    "name": "MG ZX",
     "type": "Hatchback",
     "pricePerDay": 76.0,
     "fuel": "70L",
@@ -865,7 +865,7 @@
   },
   {
     "id": 49,
-    "name": "MG ZX Excite",
+    "name": "MG ZX",
     "type": "Hatchback",
     "pricePerDay": 74.0,
     "fuel": "90L",
@@ -955,7 +955,7 @@
   },
   {
     "id": 54,
-    "name": "All New Rush",
+    "name": "All New",
     "type": "SUV",
     "pricePerDay": 76.0,
     "fuel": "70L",
@@ -1009,7 +1009,7 @@
   },
   {
     "id": 57,
-    "name": "MG ZX Exclusice",
+    "name": "MG ZX",
     "type": "Hatchback",
     "pricePerDay": 76.0,
     "fuel": "70L",
@@ -1045,7 +1045,7 @@
   },
   {
     "id": 59,
-    "name": "MG ZX Excite",
+    "name": "MG ZX",
     "type": "Hatchback",
     "pricePerDay": 74.0,
     "fuel": "90L",
@@ -1189,7 +1189,7 @@
   },
   {
     "id": 67,
-    "name": "MG ZX Exclusice",
+    "name": "MG ZX",
     "type": "Hatchback",
     "pricePerDay": 76.0,
     "fuel": "70L",
@@ -1225,7 +1225,7 @@
   },
   {
     "id": 69,
-    "name": "MG ZX Excite",
+    "name": "MG ZX",
     "type": "Hatchback",
     "pricePerDay": 74.0,
     "fuel": "90L",
@@ -1369,7 +1369,7 @@
   },
   {
     "id": 77,
-    "name": "MG ZX Exclusice",
+    "name": "MG ZX",
     "type": "Hatchback",
     "pricePerDay": 76.0,
     "fuel": "70L",
@@ -1405,7 +1405,7 @@
   },
   {
     "id": 79,
-    "name": "MG ZX Excite",
+    "name": "MG ZX",
     "type": "Hatchback",
     "pricePerDay": 74.0,
     "fuel": "90L",
